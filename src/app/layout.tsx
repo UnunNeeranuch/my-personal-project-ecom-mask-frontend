@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../styles/globals.css';
 import { notoSans } from '@/styles/font';
+import Header from '@/components/layout/header';
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${notoSans.className}`}>{children}</body>
+      <body className={`antialiased ${notoSans.className}`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
