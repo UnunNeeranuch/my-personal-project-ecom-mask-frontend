@@ -5,5 +5,11 @@ export const metadata: Metadata = {
 };
 
 export default function ProductPage() {
-  return <div>ProductPage</div>;
+  return (
+    <div>
+      <div className="bg-blue-100 flex items-center justify-center  ">
+        <div></div>
+      </div>
+    </div>
+  );
 }
